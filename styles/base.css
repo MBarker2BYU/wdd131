@@ -56,7 +56,8 @@ nav a
 {    
     text-align: center;
     border: 2px solid white;
-    text-decoration: none;        
+    text-decoration: none;
+    color: var(--text-color);        
 }
 
 nav a:visited
