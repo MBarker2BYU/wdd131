@@ -1,0 +1,38 @@
+{
+	// Place your wdd131 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Base WDD131 page": {
+		"prefix": "WDD131",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en-US\">",
+			"<head>",
+			"    <meta charset=\"UTF-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"    <title>WDD 131 – Dynamic Web Fundamentals - Matthew D. Barker</title>",
+			"    <meta name=\"description\" content=\"WDD131: Web Fundamwentals - Matthew D. Barker - '${1:Add Description}'\">",
+			"    <meta name=\"author\" content=\"Matthew D. Barker\">",
+			"    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+			"    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+			"    <link href=\"https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Brush+Script&display=swap\"",
+			"        rel=\"stylesheet\">",
+			"    <link rel=\"stylesheet\" href=\"${2:Add CSS}\">",
+			"</head>",
+			"<body>",
+			"    <header>",
+			"        <h1>'${3:Add Title}'</h1>",
+			"        <nav></nav>",
+			"    </header>",
+			"    <main></main>",
+			"    <footer></footer>",
+			"</body>",
+			"</html>"
+		],
+		"description": "Base WDD131 page"
+	}
+}
