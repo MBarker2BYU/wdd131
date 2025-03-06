@@ -1,0 +1,39 @@
+:root
+{
+    --roboto-text: 'Roboto', sans-serif;
+    
+    --border-color: #aaa;
+    --primary-color: slategray;
+    --section-background: whitesmoke;
+    
+    --max-width: 640px;
+    --padding: 1rem;
+    --grid-gap: var(--padding);
+}
+
+body
+{
+    font-family: var(--roboto-text);
+}
+
+header, main, footer
+{
+    max-width: var(--max-width);
+    margin: var(--padding) auto;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    padding: var(--padding);
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--grid-gap);
+}
+
+section
+{
+    background-color: var(--section-background);
+    padding: var(--padding);
+}
