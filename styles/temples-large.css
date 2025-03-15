@@ -1,13 +1,23 @@
 @media screen and (min-width: 500px) 
-{
-     header
-     {
-        background-color:var(--background-color);
-        color: var(--text-color);
-     }
-     
+{        
      .album
      {
         grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     #menu
+     {
+        display: none;        
+     }
+
+     .navigation
+     {
+        flex-direction: row;
+     }
+
+     .navigation a
+     {
+        display: block;
+        flex: 1 1 100%;
      }
 }
