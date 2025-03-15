@@ -1,0 +1,13 @@
+@media screen and (min-width: 500px) 
+{
+     header
+     {
+        background-color:var(--background-color);
+        color: var(--text-color);
+     }
+     
+     .album
+     {
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+}
