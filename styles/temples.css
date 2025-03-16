@@ -35,7 +35,7 @@ h1{
     text-align: center;
     height: 50px;
     padding-top: 5px;   
-    /* border: 1px solid yellowgreen;         */
+    /* border: 1px solid yellowgreen;         */    
 }
 
 h2
@@ -83,12 +83,6 @@ nav a
     color: var(--text-color);    
 }
 
-nav a:hover
-{
-    /* color: var(--title-text-color); */
-    /* background-color: var(--menu-color-background);     */
-    /* border-bottom: 2px solid var(--menu-color-background); */
-}
 
 nav li:first-child
 {
