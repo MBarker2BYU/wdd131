@@ -38,12 +38,13 @@ h1{
     /* border: 1px solid yellowgreen;         */
 }
 
-/* h2
+h2
 {
     font-family: var(--heading-font);
     text-align: center;
     height: 2.5rem;    
-}  */
+    padding-top: 30px;   
+} 
 
 header
 {
@@ -166,7 +167,7 @@ figure img:hover
 }
 
 footer {
-    margin-top: var(--grid-gap);
+    margin-top: 30px;
     box-shadow: 0 -3px 5px var(--shadow-color);
     padding: 10px;
 }
