@@ -1,8 +1,11 @@
-const hamburgerButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+function showSidebar() 
+{    
+    var sidebar = document.querySelector('.sidebar');    
+    sidebar.style.display = 'flex';
+}
 
-hamburgerButton.addEventListener('click', () => 
+function hideSidebar()
 {
-	navigation.classList.toggle('open');
-	hamburgerButton.classList.toggle('open');
-});
+    var sidebar = document.querySelector('.sidebar');    
+    sidebar.style.display = 'none';
+}

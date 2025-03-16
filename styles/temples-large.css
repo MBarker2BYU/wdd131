@@ -1,23 +1,28 @@
-@media screen and (min-width: 500px) 
+@media screen and (min-width: 800px) 
 {        
      .album
      {
         grid-template-columns: 1fr 1fr 1fr;
      }
 
-     #menu
-     {
-        display: none;        
-     }
+}
 
-     .navigation
-     {
-        flex-direction: row;
-     }
+@media(max-width: 750px)
+{
+    .hideOnMobile
+    {
+        display: none;
+    }
+    .menu-button
+    {
+        display: block;        
+    }    
+}
 
-     .navigation a
-     {
-        display: block;
-        flex: 1 1 100%;
-     }
+@media(max-width: 400px)
+{
+    .sidebar
+    {
+        width: 100%;
+    }    
 }

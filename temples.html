@@ -19,58 +19,66 @@
 </head>
 
 <body>
-    <header class ="bottom-border">
-        <h1>Temple Album</h1>
-        <button type="button" id="menu"></button>
+    <header >
         <nav>
-            <ul class="navigation">
+            <ul>
+                <li><a href="#">Temples</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Old</a></li>
+                <li class="hideOnMobile"><a href="#">New</a></li>
+                <li class="hideOnMobile"><a href="#">Large</a></li>
+                <li class="hideOnMobile"><a href="#">Small</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#">Small</a></li>                
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
+        <h1>Home</h1>
         <div class="album">
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
+                <img src="./images/san-diego-temple.jpeg" loading="lazy" alt="San Diego Temple">
                 <figcaption>San Diego Temple</figcaption>
-            </figure>            
+            </figure>
         </div>
     </main>
     <footer>
