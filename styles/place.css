@@ -43,6 +43,11 @@ header
     box-shadow: 0 3px 5px var(--shadow-color);
 }
 
+.make-relative
+{
+    position: relative;
+}
+
 .hero-image
 {
     width: 100vw;
