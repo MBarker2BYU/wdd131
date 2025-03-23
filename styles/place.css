@@ -40,6 +40,11 @@ header
 {
     padding: 5px 0;
     background-color: var(--ecru);
+    /* box-shadow: 0 3px 5px var(--shadow-color); */
+}
+
+header::after
+{
     box-shadow: 0 3px 5px var(--shadow-color);
 }
 
