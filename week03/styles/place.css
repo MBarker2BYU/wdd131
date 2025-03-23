@@ -1,0 +1,124 @@
+:root
+{
+    --ecru: #cfa96b;
+    --gunmetal: #212b2d;
+    --carolina-blue: #8bb7ca;
+    --ebony: #606c62;
+    --eerie-black: #191c08;
+
+    --heading-font: "Stardos Stencil", serif;
+    --text-font: "Allerta Stencil", serif;
+
+    --shadow-color: #0000007f;
+    --smoked-glass: #ffffff85; 
+    --glass-highlight: #02242c80;
+}
+
+body 
+{
+    margin: 0;
+    min-width: 315px;
+    color: var(--gunmetal);
+    background-color: var(--carolina-blue);
+}
+
+h1 
+{
+    font-family: var(--heading-font);
+    font-size: 38px;
+    color: var(--heading-color);
+    text-align: center;        
+}
+
+h2
+{
+    font-family: var(--heading-font);
+    text-align: center;    
+}
+
+header
+{
+    padding: 5px 0;
+    background-color: var(--ecru);
+    box-shadow: 0 3px 5px var(--shadow-color);
+}
+
+.hero-image
+{
+    width: 100vw;
+}
+
+.table-data
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+    font-family: var(--text-font);
+}
+
+.data-headers
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.first-column
+{
+    text-align: right;
+}
+
+footer {
+    background-color: var(--ecru);
+    border-top: 2px solid var(--border-color);
+    box-shadow: 0 -3px 5px var(--shadow-color);
+    padding: 10px;
+}
+
+footer p
+{
+    margin: 1px;
+    font-family: var(--text-font);
+    font-size: small;
+    text-align: center;
+}
+
+@media (min-width: 800px) 
+{
+    .data-headers
+    {   
+        display: grid;
+        grid-template-columns: 70% auto;
+        align-items: center;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 3px 5px var(--shadow-color);
+        background-color: var(--glass-highlight);
+        margin: 0;
+        margin-bottom: 20px;        
+    }
+
+    .general-data
+    {
+        position: absolute;
+        background-color: var(--smoked-glass);
+        border-radius: 10px;
+        border: 1px solid var(--ecru);
+
+        width: 300px;
+    }
+
+    .data-position
+    {        
+        top: 15px;
+        left: 15px;
+    }  
+
+    .weather-data-position
+    {        
+        bottom: 15px;
+        right: 15px;     
+    }
+    
+}

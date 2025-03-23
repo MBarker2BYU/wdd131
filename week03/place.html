@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals - Matthew D. Barker</title>
-    <meta name="description" content="WDD131: Web Fundamwentals - Matthew D. Barker - W03 Assignment: Country Page">
+    <meta name="description" content="WDD131: Web Fundamwentals - Matthew D. Barker - Country Page">
     <meta name="author" content="Matthew D. Barker">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Brush+Script&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/place.css">
     <script src="./scripts/place.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Key West, Florida</h1>
-        <nav></nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div style="position: relative;">
+            <picture>
+                <source media="(max-width: 250px)" srcset="./images/florida-keys-small.webp">
+                <source media="(max-width: 500px)" srcset="./images/florida-keys-medium.webp">
+                <source media="(max-width: 750px)" srcset="./images/florida-keys-large.webp">
+                <source media="(max-width: 1000px)" srcset="./images/florida-keys-x-large.webp">
+                <img class="hero-image" src="./images/florida-keys-xx-large.webp" width="1500px" alt="Key West, Florida">
+            </picture>
+            <section class="general-data data-position">
+                <div class="data-headers">
+                    <h2>Data</h2>
+                    <img src="./images/geography.svg" alt="" height="48px">
+                </div>
+                <table class="table-data">
+                    <tr>
+                        <td class="first-column">Area:</td>
+                        <td>4.2 sq mi</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Population:</td>
+                        <td>25,824</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Language:</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Currency:</td>
+                        <td>US Dollar</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Time Zone:</td>
+                        <td>Eastern (UTC-5)</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="general-data weather-data-position">
+                <div class="data-headers">
+                    <h2>Weather</h2>
+                    <img src="./images/sunny.svg" alt="" height="64px">
+                </div>
+                <table class="table-data">
+                    <tr>
+                        <td class="first-column">Temperature:</td>
+                        <td>76 &degF (24.4 &degC)</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Conditions:</td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Wind:</td>
+                        <td>6 mph (9.7 kph)</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Wind Chill:</td>
+                        <td id="windchill"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Humidity:</td>
+                        <td>67%</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Visibity:</td>
+                        <td>17 mi (27 km)</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Matthew D. Barker | Florida, United States of America</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
+
 </html>
