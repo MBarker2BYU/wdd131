@@ -38,6 +38,13 @@ h2
     align-items: center;
 }
 
+img
+{
+    width: 100%;
+    background-color: #000;
+    animation: fade 5s;
+}
+
 footer {
     border-top: 2px solid var(--border-color);
     padding: 10px;
@@ -49,4 +56,16 @@ footer p
     font-family: var(--text-font);
     font-size: small;
     text-align: center;
+}
+
+@keyframes fade 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }    
 }
