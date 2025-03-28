@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Matthew D. Barker</title>
+    <meta name="description" content="WDD131: Web Fundamwentals - Matthew D. Barker - 'Lazyloading Images'">
+    <meta name="author" content="Matthew D. Barker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/lazyloading.css">
+    <script defer src="./scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy loading Images (Aircraft of the Corps)</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <picture><img src="./images/AV-8B.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="./images/CH-53.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="./images/Cobra.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="./images/Corsair.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="./images/F-18.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+            <picture><img src="./images/F-35.jpg" alt="AV-8B" loading="lazy" width="400" height="600"></picture>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Matthew D. Barker | Florida, United States of America</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

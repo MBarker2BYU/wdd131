@@ -19,7 +19,7 @@
 			"    <meta name=\"author\" content=\"Matthew D. Barker\">",
 			"    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
 			"    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
-			"    <link href=\"https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Brush+Script&display=swap\"",
+			"    <link href=\"https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil:wght@400;700&display=swap\"",
 			"        rel=\"stylesheet\">",
 			"    <link rel=\"stylesheet\" href=\"${2:Add CSS}\">",
 			"</head>",
