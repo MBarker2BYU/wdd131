@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Matthew D. Barker</title>
+    <meta name="description" content="WDD131: Web Fundamwentals - Matthew D. Barker - Picture Album">
+    <meta name="author" content="Matthew D. Barker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/filtered-temples.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header >
+        <nav>
+            <ul>
+                <li><a href="#"><h1>Temple Album</h1></a></li>
+                <li class="hideOnMobile" id="all-filter"><a href="#">Home</a></li>
+                <li class="hideOnMobile" id="old-filter"><a href="#">Old</a></li>
+                <li class="hideOnMobile" id="new-filter"><a href="#">New</a></li>
+                <li class="hideOnMobile" id="large-filter"><a href="#">Large</a></li>
+                <li class="hideOnMobile" id="small-filter"><a href="#">Small</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li id="all-filter2"><a href="#">Home</a></li>
+                <li id="old-filter2"><a href="#">Old</a></li>
+                <li id="new-filter2"><a href="#">New</a></li>
+                <li id="large-filter2"><a href="#">Large</a></li>
+                <li id="small-filter2"><a href="#">Small</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="album">
+            
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Matthew D. Barker | Florida, United States of America</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
