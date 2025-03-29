@@ -152,6 +152,12 @@ nav li:not(:first-child) a:hover
     transition: all 0.3s ease-in-out;
 }
 
+.album img:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--menu-color-background);
+}
+
 .album h3
 {
     font-family: var(--heading-font);
@@ -173,17 +179,6 @@ nav li:not(:first-child) a:hover
     border-bottom: 2px solid var(--border-color);
 }
 
-/* figure
-{    
-    padding: 0;
-    font-family: var(--text-font);
-    text-align: center;    
-} */
-
-/* figure img:hover
-{
-    box-shadow: 0 0 50px var(--menu-color-background);
-} */
 
 footer {
     margin-top: 30px;
