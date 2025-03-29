@@ -61,7 +61,7 @@ const temples = [
         dedicated: "April 25, 1993",
         area: 72000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-39281.jpg"
+            "./images/san-diego-california-temple.webp"
     },
     {
         templeName: "Fort Lauderdale Florida",
@@ -69,7 +69,7 @@ const temples = [
         dedicated: "May 4, 2014",
         area: 30500,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/fort-lauderdale-florida-temple/fort-lauderdale-florida-temple-3792.jpg"
+            "./images/fort-lauderdale-florida-temple.webp"
     },
     {
         templeName: "Orlando Florida",
@@ -77,7 +77,7 @@ const temples = [
         dedicated: "October 11, 1994",
         area: 70000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/orlando-florida-temple/orlando-florida-temple-51569.jpg"
+            "./images/orlando-florida-temple.webp"
     },
     // Add more temple objects here...
 ];
