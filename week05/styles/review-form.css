@@ -61,7 +61,8 @@ h1{
 
 .review-form input[type="text"],
 .review-form input[type="date"],
-.review-form textarea
+.review-form textarea,
+.review-form select
 {
     display: block;
     border: 1px solid var(--menu-color-background);
@@ -71,35 +72,8 @@ h1{
     color: var(--text-color);
     font-family: var(--text-font);
     font-size: 1rem;
-    
-}
-
-.review-form input[type="text"]
-{
-    max-width: 390px;
-}
-
-.review-form input[type="date"]
-{
-    max-width: 385px;
-}
-
-.review-form select
-{    
-    display: block;
-    border: 1px solid var(--menu-color-background);
-    border-radius: 6px;
-    color: var(--text-color);
-    font-family: var(--text-font);
-    font-size: 1rem;
-    width: 100%;
-    max-width: 420px;
-}
-
-.review-form textarea
-{    
-    max-width: 390px;
-    resize: none;
+    max-width: 400px;
+    appearance: none;    
 }
 
 .review-form input[type="checkbox"]
