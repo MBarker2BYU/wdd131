@@ -124,7 +124,6 @@ h1{
 .star-rating
 {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
@@ -139,12 +138,18 @@ h1{
 
 .star-rating > label
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     font-size: 40px;
     color: var(--text-color); 
     transition: 0.2s ease;
-    color: orange;    
+    color: orange;
+    padding: 0 30px;    
+
+    border: 1px solid var(--menu-color-background);
 }
 
 .star-rating label:hover 
