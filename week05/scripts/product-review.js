@@ -34,3 +34,8 @@ products.forEach((product) => {
     option.textContent = product.name;
     productname.appendChild(option);
 });
+
+productname.addEventListener("change", () => 
+{
+    productname.style.borderLeft = "6px solid rgb(12, 216, 12)";
+});

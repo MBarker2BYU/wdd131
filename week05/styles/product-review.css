@@ -59,7 +59,6 @@
     border-left: 6px solid var(--red-accent-color);
 }
 
-.product-review select,
 .product-review input:required:valid
 {
     border-left: 6px solid var(--vaild-color);
