@@ -73,7 +73,7 @@ h1{
     font-family: var(--text-font);
     font-size: 1rem;
     max-width: 400px;
-    appearance: none;    
+    appearance: none;        
 }
 
 .review-form input[type="checkbox"]
