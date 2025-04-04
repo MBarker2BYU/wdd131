@@ -41,3 +41,24 @@ productname.addEventListener("change", () =>
 
     productname.style.borderLeft = "6px solid rgb(12, 216, 12)";
 });
+
+function validateForm() 
+{
+    const stars = document.getElementsByName("stars");
+    let selectedStar = null;
+
+    for (const star of stars) {
+        if (star.checked) {
+            selectedStar = star.value;
+            break;
+        }
+    }
+
+    if (!selectedStar) {
+        alert("Please select a star rating.");
+        return false;
+    }
+
+    return true;
+    
+}
