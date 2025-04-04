@@ -37,5 +37,7 @@ products.forEach((product) => {
 
 productname.addEventListener("change", () => 
 {
+    if (productname.value === "") return;
+
     productname.style.borderLeft = "6px solid rgb(12, 216, 12)";
 });
