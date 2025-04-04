@@ -45,6 +45,11 @@ h2
     text-align: center;       
 }
 
+.bottom-border 
+{
+    border-bottom: 2px solid var(--border-color);
+}
+
 footer {
     border-top: 2px solid var(--border-color);
     padding: 10px;

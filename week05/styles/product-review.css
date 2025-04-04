@@ -65,9 +65,14 @@
     border-left: 6px solid var(--vaild-color);
 }
 
-.bottom-border 
+.italic
 {
-    border-bottom: 2px solid var(--border-color);
+    font-style: italic;
+}
+
+.optional
+{    
+    color: var(--red-accent-color);
 }
 
 /* -- Start Star Rating -- */

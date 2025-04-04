@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/product-review.css">
     <script defer src="./scripts/common.js"></script>
+    <script defer src="./scripts/product-review.js"></script>
 </head>
 <body>
     <header class="bottom-border">
@@ -43,7 +44,7 @@
                         <input type="radio" name="stars" id="star-d" value="2" />
                         <label for="star-d"></label>
             
-                        <input type="radio" name="stars" id="star-e" value="1" required />
+                        <input type="radio" name="stars" id="star-e" value="1" />
                         <label for="star-e"></label>
                     </div>
                 </div>
@@ -53,17 +54,17 @@
             </fieldset>
             <fieldset>
                 <label>Which feature did you find useful in the product?</label>
-                <label>(Check all that apply)</label>
+                <label class="italic">(Check all that apply)</label>
                 <label><input type="checkbox" name="features" value="durability">Durability</label>
                 <label><input type="checkbox" name="features" value="ease-of-use">Ease of Use</label>   
                 <label><input type="checkbox" name="features" value="performance">Performance</label>
                 <label><input type="checkbox" name="features" value="design">Design</label>
             </fieldset>
             <fieldset>
-                <label>Written Review <span>(Optional)</span><textarea name="written-review" id="review"></textarea></label>
+                <label>Written Review <span class="optional italic">(Optional)</span><textarea name="written-review" id="review"></textarea></label>
             </fieldset>
             <fieldset>
-                <label>Your Name <span>(Optional)</span><input type="text" name="your-name" id="name"></label>
+                <label>Your Name <span class="optional italic">(Optional)</span><input type="text" name="your-name" id="name"></label>
             </fieldset>
 
             <input type="submit" value="Post Review">
