@@ -147,8 +147,8 @@ h1{
     color: var(--text-color); 
     transition: 0.2s ease;
     color: orange;
-    padding: 0 30px;    
-
+    padding: 0 30px;
+    appearance: none;
     border: 1px solid var(--menu-color-background);
 }
 
