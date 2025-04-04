@@ -148,8 +148,7 @@ h1{
     transition: 0.2s ease;
     color: orange;
     padding: 0 30px;
-    appearance: none;
-    border: 1px solid var(--menu-color-background);
+    appearance: none;    
 }
 
 .star-rating label:hover 
