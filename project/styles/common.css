@@ -1,0 +1,234 @@
+html
+{
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+*
+{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); 
+}
+
+:root
+{
+    --background-color: #dfe3e5;
+    --section-color: #fff;
+    --heading-color: #3f4443 ;
+    --border-color: #646a6e;
+    --menu-color-background: #ba0c2f;
+    --text-color: #000000;
+    --accent-color: var(--menu-color-background);
+
+    --shadow-color: #333;
+
+    --heading-font: "Stardos Stencil", serif;
+    --text-font: "Allerta Stencil", serif;
+}
+
+h1
+{
+    font-family: var(--heading-font);
+    font-size: xxx-large;
+    color: var(--heading-color);
+    margin: 10px;
+}
+
+h2
+{
+    font-family: var(--heading-font);
+    font-size: x-large;
+    color: var(--heading-color);
+}
+
+.section
+{
+    border: 1px solid var(--border-color);
+    background-color: var(--section-color);
+    font-family: var(--heading-font);
+    font-size: 20px;
+    text-align: start;
+    color: var(--heading-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 5px var(--shadow-color);
+    margin: 15px;
+    padding: 15px;    
+}
+
+.section p
+{
+    background-color: var(--section-color);
+    font-family: var(--text-font);
+}
+
+.section div
+{
+    background-color: var(--section-color);
+}
+
+.section h2
+{
+    background-color: var(--section-color);
+}
+
+.section p
+{
+    margin: 5px 15px;
+}
+
+.bold
+{
+    font-family: var(--heading-font);
+    background-color: var(--section-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.background
+{
+    background-color: var(--background-color);
+}
+
+.logo
+{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    background-color: var(--section-color);    
+}
+
+.logo img
+{    
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 10px var(--shadow-color);    
+}
+
+.swatch
+{
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;    
+    border: 1px solid var(--border-color);
+    box-shadow: 3px 3px 5px var(--shadow-color); 
+    margin-left: 30px;       
+}
+
+.background-color
+{
+    background-color: var(--background-color) !important;
+}
+
+.primary-color
+{
+    background-color: var(--section-color) !important;
+}
+
+.secondary-color
+{
+    background-color: var(--border-color) !important;
+}
+
+.accent-color
+{
+    background-color: var(--accent-color) !important;
+}
+
+.font-color
+{
+    background-color: var(--text-color) !important;
+}
+
+.heading-color
+{
+    background-color: var(--border-color) !important;
+}
+
+.drop-shadow-color
+{
+    background-color: var(--shadow-color) !important;
+}
+
+.wireframes
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: var(--grid-gap);
+    justify-items: center;
+    text-align: center;
+}
+
+.wireframes figure
+{
+    background-color: var(--section-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 5px var(--shadow-color);
+    margin: 15px;
+    padding: 15px;    
+}
+
+.wireframes figcaption
+{
+    background-color: var(--section-color);
+}
+.bottom-border 
+{
+    border-bottom: 2px solid var(--border-color);
+}
+
+.image-album
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--grid-gap);
+    justify-items: start;
+    text-align: center;    
+}
+
+.album-img
+{    
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 300px;
+    /* max-height: 185px; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    transition: all 0.3s ease-in-out;
+    background: var(--section-color);
+}
+
+.album img:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.image-album figure
+{
+    background-color: var(--section-color);
+}
+
+.image-album figcaption
+{   
+    background-color: var(--section-color);
+}
+
+
+footer {
+    margin-top: 30px;
+    box-shadow: 0 -3px 5px var(--shadow-color);
+    padding: 10px;
+}
+
+footer p
+{
+    margin: 1px;
+    font-family: var(--text-font);
+    font-size: small;
+    text-align: center;
+}
