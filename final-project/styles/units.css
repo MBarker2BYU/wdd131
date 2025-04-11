@@ -1,0 +1,177 @@
+/* Slider Container */
+.slider-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    flex: 0 0 330px; /* Fixed width for consistency */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    z-index: 5;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem 1.5rem 3rem;
+    position: relative;
+    min-height: 150px;
+}
+
+.card-content h3 {
+    font-family: 'Stardos Stencil', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: #1a3c34;
+}
+
+.card-content p {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 1rem;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1a3c34;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Allerta Stencil', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #2e5b52;
+}
+
+/* Slider Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-btn {
+    left: -20px;
+}
+
+.next-btn {
+    right: -20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 220px; /* Reduced to fit 3 cards */
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 1.2rem 1.2rem 2.5rem;
+        min-height: 130px;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .card-btn {
+        bottom: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .prev-btn {
+        left: -15px;
+    }
+
+    .next-btn {
+        right: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 200px; /* Further reduced */
+    }
+
+    .card-img {
+        height: 160px;
+    }
+
+    .card-content {
+        padding: 1rem 1rem 2rem;
+        min-height: 120px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .prev-btn {
+        left: -10px;
+    }
+
+    .next-btn {
+        right: -10px;
+    }
+}
