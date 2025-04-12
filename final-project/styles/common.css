@@ -148,27 +148,18 @@ nav a:hover
     margin: 0;
 }
 
-.usmc
+.org-info
 {
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-}
-
-.usmc p
-{    
+    padding: 15px; 
+    font-size: x-large; 
     font-family: var(--text-font);
-    font-size: x-large;
-    width: 75%;
-    margin: 10px;
 }
 
-.usmc img
+.org-info img
 {
-    height: 300px;    
-    margin: 10px;
-    border: 2px solid goldenrod;
-    box-shadow: 3px 3px 10px var(--border-color);
+    float: right; 
+    margin: 10px; 
+    width: 300px;     
 }
 
 .usmc-history

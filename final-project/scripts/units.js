@@ -92,13 +92,15 @@ function prevSlide() {
 
 // Fetch data from JSON file
 fetch('data/elite-units.json')
-    .then(response => {
+    .then(response => 
+    {
         if (!response.ok) {
-            throw new Error('Failed to load cards.json');
+            throw new Error('Failed to load elite-units.json');
         }
         return response.json();
     })
-    .then(cardData => {
+    .then(cardData => 
+    {
         // Load cards and dots
         loadCards(cardData);
         createDots(cardData);
