@@ -1,21 +1,36 @@
 :root
 {
-    --background-color: #dfe3e5;
-    --heading-color: #3f4443 ;
-    --border-color: #646a6e;
-    --menu-color-background: #ba0c2f;
-    --text-color: #000000;
+
+    --white-color: #FFF;
+    --black-color: #000;
+
+    --background-color: #DFE3E5;
+    --primary-color: var(--white-color);
+    --secondary-color: #646A6E;
+    --accent-color: #ba0c2f;
+
+    --border-color: var(--secondary-color);
+    
+    --black-text-color: var(--black-color);
+    --dark-gray-text-color: var(--secondary-color);
+    --gray-text-color: #3f4443;
+    
+    --button-color: #646a6e7c;
+    --button-hover-color: var(--secondary-color);
+
+    --drop-shadow-color: #333;
 
     --heading-font: "Stardos Stencil", serif;
     --text-font: "Allerta Stencil", serif;
 
-    --shadow-color: #333;
+    --border-radius: 10px;
+    --half-border-radius: 5px;
 }
 
 body 
 {
     margin: 0;
-    color: var(--text-color);
+    color: var(--black-text-color);
 }
 
 h1 
@@ -38,7 +53,8 @@ nav
     margin: 0 auto;
 }
 
-nav ul {
+nav ul 
+{
     font-family: var(--text-font);
     font-size: x-large;
     display: flex;
@@ -57,24 +73,24 @@ nav li
 nav a 
 {    
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid var(--primary-color);
     text-decoration: none;
-    color: var(--text-color);        
+    color: var(--black-text-color);        
 }
 
 nav a:visited
 {
-    color: var(--text-color);
+    color: var(--black-text-color);
 }
 
 nav a:hover 
 {
-    border-bottom: 2px solid var(--menu-color-background);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .active
 {
-    border-bottom: 2px solid var(--menu-color-background);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .bottom-border 
@@ -85,7 +101,7 @@ nav a:hover
 .elite-units
 {
     display: flex;
-    justify-self: start
+    justify-self: start;
 }
 
 .elite-units img
@@ -93,7 +109,7 @@ nav a:hover
     width: 175px;
     height: 175px;
     margin: 10px 25px 10px;
-    border: 1px solid var(--menu-color-background);
+    border: 1px solid var(--accent-color);
     box-shadow: 3px 3px 10px var(--border-color);
 }
 
@@ -120,8 +136,8 @@ nav a:hover
 
 .card-heading
 {
-    background-color: var(--menu-color-background);
-    border: 1px solid var(--menu-color-background);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
     border-radius: 8px 8px 0 0;
     color: var(--background-color);
     padding-top: 5px;        
@@ -180,25 +196,22 @@ nav a:hover
     font-family: var(--heading-font);
     font-size: 16px;
     margin-top: 25px;
-    margin-left: 15px;
-    /* border: 1px solid var(--menu-color-background); */
+    margin-left: 15px;    
 }
 
 .album img
 {
-    width: 400px;
-    /* height: 300px; */
+    width: 400px;    
     margin: 0 15px 20px;
-    border: 1px solid var(--menu-color-background);
+    border: 1px solid var(--accent-color);
     box-shadow: 3px 3px 10px var(--border-color);
 }
 
 .album img:hover
 {
     transform: scale(1.05);
-    box-shadow: 3px 3px 10px var(--menu-color-background);
+    box-shadow: 3px 3px 10px var(--accent-color);
 }
-
 
 
 footer {
